@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/*  * General Styles */
+
+* {
+  /* * Remove the default padding and margin */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  /* * This is added, when we add the links to the different sections on our page , it is gonna have a smooth scroll instead of instantly going to that page/section  */
+  scroll-behavior: smooth;
+}
+
+p {
+  color: #555555;
+}
+
+/* * Transition */
+
+a,
+.btn {
+  /* * So whenever we click on these , there will be a transition and will not be instantenous */
+  transition: all 300ms ease;
+}
+
+/* * DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  /* * 17vh means the nav is going to take 17% of the whole screen  */
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  text-decoration-color: #fff;
+}
+
+a:hover {
+  color: #808080;
+  text-decoration: underline;
+  /*  * This will add more space in between the content and the underline */
+  text-underline-offset: 1rem;
+  text-decoration-color: #b5b5b5;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
