@@ -155,3 +155,131 @@ a:hover {
   /* Resetting the transformation for the last line */
   transform: none;
 }
+
+/* * Sections */
+
+section {
+  padding-top: 4vh; /* Adding vertical padding to the top of the section */
+  height: 96vh; /* Setting the height of the section to occupy 96% of the viewport height */
+  margin: 0 10rem; /* Setting horizontal margins to create space around the section */
+  box-sizing: border-box; /* Ensuring that padding and border are included in the total width and height of the section */
+  min-height: fit-content; /* Setting the minimum height of the section to fit its content and making sure no overlapping happens*/
+}
+
+.section-container {
+  display: flex;
+}
+
+/* * Profile section */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section-pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0; /* Setting the top and bottom margins to auto, and left and right margins to 0 */
+  /* auto for top and bottom margins centers the container vertically within its parent element, and 0 for left and right margins ensures there is no horizontal space around the container.*/
+}
+
+.section-text {
+  align-self: center;
+  text-align: center;
+}
+
+.section-text p {
+  font-weight: 600;
+}
+
+.section-text-p1 {
+  text-align: center;
+}
+.section-text-p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/*  * ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* * BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: #353535 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+/* .btn-color-1,
+.btn-color-2:hover {
+  background-color: #353535;
+  color: #fff;
+}
+
+.btn-color-1:hover {
+  background: #000000;
+}
+
+.btn-color-2 {
+  background: none;
+} */
+
+.btn-color-1 {
+  background-color: #fff;
+}
+
+.btn-color-1:hover {
+  background: #000000;
+  color: #fff;
+  box-shadow: 0 0 5px 0 red;
+}
+
+.btn-color-2 {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-color-2:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 5px 0 red;
+}
