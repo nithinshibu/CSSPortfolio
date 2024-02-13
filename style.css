@@ -70,3 +70,88 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
+
+/* *HAMBURGER MENU */
+
+#hamburger-nav {
+  /* *Because we don't need the hamburger in desktop view  */
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  /* * This will be the lines of the hamburger menu */
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  /* * This will make the hamburger menu to an X and on cilcking it , it will close the hamburger menu */
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute; /* Positioning the menu links absolutely relative to the parent */
+  top: 100%; /* Aligning the top of the menu-links to the bottom of its parent */
+  right: 0; /* Aligning the right side of the menu-links to the right side of its parent */
+  background-color: #fff; /* Setting the background color of the menu-links to white */
+  width: fit-content; /* Setting the width of the menu-links to fit its contents */
+  max-height: 0; /* Setting the maximum height of the menu-links to 0, initially hiding the menu */
+  overflow: hidden; /* Hiding any content that overflows the defined height (which is 0 in this case) */
+  transition: all 0.3s ease-in-out; /* Adding a transition effect to all properties, with a duration of 0.3 seconds and an ease-in-out timing function */
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  /* * Here we are transforming the line by rotating it into an X and also moving it slighlty because when we rotate it , it is going to be skewed and so moving it in both X and Y directions   */
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+  /* * Removing the second line completely */
+  opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+  /* Transforming the last line into an X shape and adjusting its position */
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  /* Resetting the transformation for the first line */
+  transform: none;
+}
+.hamburger-icon span:nth-child(2) {
+  /* Ensuring the second line is fully visible in the default state */
+  opacity: 1;
+}
+.hamburger-icon span:last-child {
+  /* Resetting the transformation for the last line */
+  transform: none;
+}
