@@ -10,6 +10,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #dadada;
 }
 
 html {
@@ -56,11 +57,11 @@ a {
 }
 
 a:hover {
-  color: #808080;
+  color: #069;
   text-decoration: underline;
   /*  * This will add more space in between the content and the underline */
   text-underline-offset: 1rem;
-  text-decoration-color: #b5b5b5;
+  text-decoration-color: #fff;
 }
 
 .logo {
@@ -69,6 +70,7 @@ a:hover {
 
 .logo:hover {
   cursor: default;
+  color: #069;
 }
 
 /* *HAMBURGER MENU */
@@ -199,14 +201,25 @@ section {
 .section-text-p1 {
   text-align: center;
 }
+.section-text-p1:hover {
+  color: #069;
+}
 .section-text-p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
+.section-text-p2:hover {
+  color: #069;
+}
+
 .title {
   font-size: 3rem;
   text-align: center;
+}
+
+.title:hover {
+  color: #069;
 }
 
 .socials-container {
@@ -249,37 +262,23 @@ section {
   cursor: pointer;
 }
 
-/* .btn-color-1,
-.btn-color-2:hover {
-  background-color: #353535;
-  color: #fff;
-}
-
-.btn-color-1:hover {
-  background: #000000;
-}
-
-.btn-color-2 {
-  background: none;
-} */
-
 .btn-color-1 {
   background-color: #fff;
 }
 
 .btn-color-1:hover {
-  background: #000000;
+  background: #353535;
   color: #fff;
   box-shadow: 0 0 5px 0 red;
 }
 
 .btn-color-2 {
-  background-color: #000;
+  background-color: #353535;
   color: #fff;
 }
 
 .btn-color-2:hover {
   background: #fff;
-  color: #000;
+  color: #353535;
   box-shadow: 0 0 5px 0 red;
 }
