@@ -534,3 +534,10 @@ article .icon {
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
+
+/* *CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+}
