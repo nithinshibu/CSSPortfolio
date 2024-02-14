@@ -236,7 +236,6 @@ a:hover {
 
 section {
   padding-top: 4vh; /* Adding vertical padding to the top of the section */
-  height: 96vh; /* Setting the height of the section to occupy 96% of the viewport height */
   margin: 0 10rem; /* Setting horizontal margins to create space around the section */
   box-sizing: border-box; /* Ensuring that padding and border are included in the total width and height of the section */
   min-height: fit-content; /* Setting the minimum height of the section to fit its content and making sure no overlapping happens*/
@@ -496,6 +495,10 @@ article .icon {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.details-container.color-container {
+  width: 40px;
 }
 
 .color-container {
