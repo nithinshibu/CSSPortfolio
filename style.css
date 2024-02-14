@@ -573,3 +573,12 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
+
+/* *Footer */
+footer {
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
