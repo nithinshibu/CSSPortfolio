@@ -503,7 +503,7 @@ article .icon {
 
 .color-container {
   border-color: #a3a3a3;
-  background-color: #fafafa;
+  background-color: #f8f6f4;
 }
 
 .project-img {
@@ -540,4 +540,36 @@ article .icon {
 #contact {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: #353535 0.1rem solid;
+  border-color: #a3a3a3;
+  background: #f8f6f4;
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
 }
