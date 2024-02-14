@@ -81,15 +81,15 @@ a:hover {
 
 .logo:hover.logo-underline::after {
   opacity: 1;
-  transition: all 0.7s ease-in;
-  animation: dark-line 0.7s alternate;
+  transition: all 0.5s ease-in;
+  animation: dark-line 0.5s alternate;
 }
 
 .logo:not(:hover).logo-underline::after {
   background-color: red;
   color: yellow;
-  transition: all 0.7s ease-in;
-  animation: dark-line-off 0.7s alternate;
+  transition: all 0.5s ease-in;
+  animation: dark-line-off 0.5s alternate;
 }
 
 @keyframes dark-line {
@@ -355,4 +355,65 @@ section {
   background: #fff;
   color: #353535;
   box-shadow: 0 0 5px 0 red;
+}
+
+/* * About Section */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex-grow: 1;
+  background: #f8f6f4;
+  border-radius: 2rem;
+  border: #353535 0.1rem solid;
+  border-color: #a3a3a3;
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section-pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.about-details-heading:hover {
+  color: #069;
+}
+
+.about-details-content:hover {
+  color: #069;
 }
