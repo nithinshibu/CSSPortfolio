@@ -343,7 +343,7 @@ section {
 .btn-color-1:hover {
   background: #353535;
   color: #fff;
-  box-shadow: 0 0 5px 0 red;
+  box-shadow: 0 0 5px 0 #069;
 }
 
 .btn-color-2 {
@@ -354,7 +354,7 @@ section {
 .btn-color-2:hover {
   background: #fff;
   color: #353535;
-  box-shadow: 0 0 5px 0 red;
+  box-shadow: 0 0 5px 0 #069;
 }
 
 /* * About Section */
@@ -484,4 +484,50 @@ article .icon {
 
 .article-h3:hover {
   color: #069;
+}
+
+/* * Projects Section */
+#projects {
+  position: relative;
+}
+
+.projects-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.color-container {
+  border-color: #a3a3a3;
+  background-color: #fafafa;
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+  margin-top: 2rem;
+}
+
+.projects-sub-title.project-title {
+  margin: 1rem;
+  color: #000;
+}
+
+.project-title:hover {
+  color: #069;
+}
+
+.projects-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projects-sub-title {
+  color: #555555;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
 }
