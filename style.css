@@ -53,7 +53,7 @@ nav {
 a {
   color: #000;
   text-decoration: none;
-  text-decoration-color: #fff;
+  text-decoration-color: #008080;
 }
 
 a:hover {
@@ -61,11 +61,85 @@ a:hover {
   text-decoration: underline;
   /*  * This will add more space in between the content and the underline */
   text-underline-offset: 1rem;
-  text-decoration-color: #fff;
+  text-decoration-color: #008080;
 }
 
 .logo {
   font-size: 2rem;
+}
+
+.logo-underline::after {
+  content: "";
+  display: block;
+  /* width: 100%; */
+  color: red;
+  border: 1px solid teal;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  /* animation: dark-line 0.7s reverse; */
+}
+
+.logo:hover.logo-underline::after {
+  opacity: 1;
+  transition: all 0.7s ease-in;
+  animation: dark-line 0.7s alternate;
+}
+
+.logo:not(:hover).logo-underline::after {
+  background-color: red;
+  color: yellow;
+  transition: all 0.7s ease-in;
+  animation: dark-line-off 0.7s alternate;
+}
+
+@keyframes dark-line {
+  0% {
+    width: 5%;
+  }
+
+  15% {
+    width: 15%;
+  }
+
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+
+  75% {
+    width: 75%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes dark-line-off {
+  0% {
+    width: 100%;
+  }
+
+  15% {
+    width: 75%;
+  }
+
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 25%;
+  }
+
+  75% {
+    width: 15%;
+  }
+
+  100% {
+    width: 0%;
+  }
 }
 
 .logo:hover {
