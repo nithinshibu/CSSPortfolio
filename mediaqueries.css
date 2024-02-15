@@ -1,5 +1,14 @@
-@media screen and (max-width: 1200px) {
-  /* * This means that when the screen size is lower than 1200 pixels , the desktop navigation will disappear */
+/* @media screen and (max-width: 1400px) {
+  #profile {
+    margin-bottom: 6rem;
+    height: 83vh;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+} */
+/* * This means that when the screen size is lower than 1200 pixels , the desktop navigation will disappear */
+/* @media screen and (max-width: 1200px) {
 
   #desktop-nav {
     display: none;
@@ -8,4 +17,61 @@
   #hamburger-nav {
     display: flex;
   }
-}
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  .section-pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers,
+  .experience-containers,
+  .project-container {
+    margin-top: 0;
+  }
+} */
+
+/* @media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .experience-containers,
+  .project-container,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+} */
